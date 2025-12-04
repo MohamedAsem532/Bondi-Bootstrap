@@ -56,13 +56,15 @@ body{
     min-height: calc(100vh - 72px);
 }
 .main-btn{
-    background-color: #19283f;
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
     padding: 0.5rem 1rem;
     
 }
 .main-btn:hover{
-    background-color: var(--green-color);
-    border-color: var(--green-color);
+    background-color: var(--yellow-color);
+    color: var(--red-color);
 }
 .main-title::after{
     position: absolute;

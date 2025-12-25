@@ -146,51 +146,51 @@
           <h2>We Make This</h2>
           <p class="text-black-50 text-uppercase">Prepare to be amazed</p>
         </div>
-        <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
-          <li class="active ps-4 pe-4 rounded-pill">All</li>
-          <li>Design</li>
-          <li>Code</li>
-          <li>Photography</li>
-          <li>App</li>
+        <ul class=" filter-menu list-unstyled d-flex justify-content-center mt-5 mb-5">
+          <li class="active ps-4 pe-4 rounded-pill" data-filter="all">All</li>
+          <li data-filter="design">Design</li>
+          <li data-filter="code">Code</li>
+          <li data-filter="photography">Photography</li>
+          <li data-filter="app">App</li>
         </ul>
-        <div class="row">
+        <div class="row services-container">
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
+            <div class="box bg-white mb-4" data-work="Service" data-category="design">
+              <img class="img-fluid" src="img/design1.jpg" alt="work1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="box bg-white mb-4" data-work="Service" data-category="design">
+              <img class="img-fluid" src="img/design2.jpg" alt="work1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="service box bg-white mb-4" data-work="Service" data-category="design">
+              <img class="img-fluid" src="img/design3.jpg" alt="work1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="box bg-white mb-4" data-work="Service" data-category="code">
+              <img class="img-fluid" src="img/code1.jpg" alt="work1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="box bg-white mb-4" data-work="Service" data-category="code">
+              <img class="img-fluid" src="img/code2.jpg" alt="work1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="box bg-white mb-4" data-work="Service"data-category="photography">
               <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
+            <div class="box bg-white mb-4" data-work="Service" data-category="photography">
               <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
-              <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
-              <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
-              <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
-              <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
-              <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="box bg-white mb-4" data-work="Service">
+            <div class="box bg-white mb-4" data-work="Service" data-category="app">
               <img class="img-fluid" src="img/Image_-_How_to_design_a_website.png" alt="work1" />
             </div>
           </div>
@@ -507,5 +507,6 @@
     <!-- <i class="fa-solid fa-circle-user fa-3x"></i> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

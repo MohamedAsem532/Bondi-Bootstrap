@@ -123,6 +123,17 @@ body{
     overflow: hidden;
     padding: 5px;
     position: relative;
+    transition: transform 450ms cubic-bezier(.2,.8,.2,1),
+                opacity 450ms cubic-bezier(.2,.8,.2,1),
+                max-height 450ms cubic-bezier(.2,.8,.2,1),
+                margin 450ms cubic-bezier(.2,.8,.2,1),
+                padding 450ms cubic-bezier(.2,.8,.2,1);
+    -webkit-transition: transform 450ms cubic-bezier(.2,.8,.2,1),
+                opacity 450ms cubic-bezier(.2,.8,.2,1),
+                max-height 450ms cubic-bezier(.2,.8,.2,1),
+                margin 450ms cubic-bezier(.2,.8,.2,1),
+                padding 450ms cubic-bezier(.2,.8,.2,1);
+    max-height: 1200px;
 }
 .our-work .box::before{
     position: absolute;
@@ -141,6 +152,18 @@ body{
 .our-work .box:hover::before{
     transform: translate(0);
     
+}
+.our-work .box.filtered-out::before{
+    transform: translateX(calc(-100% - 10px));
+    opacity: 0;
+}
+.our-work .box.filtered-out{
+    opacity: 0;
+    transform: scale(.98);
+    max-height: 0;
+    margin-bottom: 0;
+    padding: 0;
+    pointer-events: none;
 }
 .our-work .MORE-btn{
     background-color: var(--red-color);

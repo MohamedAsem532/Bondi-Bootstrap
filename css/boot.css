@@ -133,7 +133,7 @@ body{
                 max-height 450ms cubic-bezier(.2,.8,.2,1),
                 margin 450ms cubic-bezier(.2,.8,.2,1),
                 padding 450ms cubic-bezier(.2,.8,.2,1);
-    max-height: 1200px;
+    height: 250px;
 }
 .our-work .box::before{
     position: absolute;
@@ -164,6 +164,11 @@ body{
     margin-bottom: 0;
     padding: 0;
     pointer-events: none;
+}
+.our-work .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .our-work .MORE-btn{
     background-color: var(--red-color);

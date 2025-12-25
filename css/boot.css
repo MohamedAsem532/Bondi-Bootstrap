@@ -8,8 +8,6 @@
 }
 body{
     font-family: "Roboto", sans-serif;  
-    
-    
 }
 /* Start NavBar */
 .navbar{
@@ -110,6 +108,12 @@ body{
 .our-work .active{
     color: var(--red-color);
     border-bottom: 2px solid var(--yellow-color);
+}
+.our-work ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 .our-work ul li{
     cursor: pointer;
@@ -291,3 +295,10 @@ body{
     background-color: var(--red-color);
     width: 100%;
 } 
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
